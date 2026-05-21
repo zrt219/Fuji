@@ -5,12 +5,14 @@ Fuji Atlas is a Next.js gallery system for a curated Fuji / Japan image archive.
 It is built as a cinematic portfolio surface rather than a generic asset grid. The project includes:
 
 - a full gallery route at `/fuji`
+- a film-mode entry button on the main Fuji hero
 - a presentation reel at `/fuji/film`
 - a static curation dashboard at `/fuji/curate`
 - an image pipeline that keeps original files separate from deployable public assets
 - duplicate-aware asset generation so duplicate source images are not uploaded into the public gallery
 
 Live deployment: [fuji-byzrt.vercel.app](https://fuji-byzrt.vercel.app)
+Main Fuji entry: [fuji-byzrt.vercel.app/fuji](https://fuji-byzrt.vercel.app/fuji)
 
 ## What is in the repo
 
@@ -67,6 +69,10 @@ Primary category system:
   Horizontal cinematic presentation mode for walkthroughs and recordings.
 - `/fuji/curate`
   Keyboard-assisted static tagging workflow for visual classification.
+- `/film`
+  Compatibility alias that redirects to `/fuji/film`.
+- `/curate`
+  Compatibility alias that redirects to `/fuji/curate`.
 
 ## Local development
 
@@ -148,6 +154,20 @@ Current live URL:
 GitHub repository:
 
 - [https://github.com/zrt219/Fuji](https://github.com/zrt219/Fuji)
+
+## Ukiyo-e studies by zrt
+
+Generated for this archive and committed with the README so the project page can show a small editorial set.
+
+<table>
+  <tr>
+    <td><img src="public/readme/ukiyo-e/ukiyo-e-01.png" alt="zrt ukiyo-e study 1" width="180" /></td>
+    <td><img src="public/readme/ukiyo-e/ukiyo-e-02.png" alt="zrt ukiyo-e study 2" width="180" /></td>
+    <td><img src="public/readme/ukiyo-e/ukiyo-e-03.png" alt="zrt ukiyo-e study 3" width="180" /></td>
+    <td><img src="public/readme/ukiyo-e/ukiyo-e-04.png" alt="zrt ukiyo-e study 4" width="180" /></td>
+    <td><img src="public/readme/ukiyo-e/ukiyo-e-05.png" alt="zrt ukiyo-e study 5" width="180" /></td>
+  </tr>
+</table>
 
 ## Notes
 

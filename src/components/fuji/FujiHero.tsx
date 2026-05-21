@@ -1,4 +1,6 @@
+import Link from "next/link";
 import Image from "next/image";
+import { Film } from "lucide-react";
 import type { FujiImage } from "@/data/fuji-images";
 
 type Props = {
@@ -20,6 +22,12 @@ export function FujiHero({ hero, totalFrames, categoryCount, heroCandidates, dig
           <p className="fa-kicker">Fuji / Japan visual operating system</p>
           <h1 id="fuji-title">Fuji Atlas</h1>
           <p>A cinematic Japanese visual system for AI, product, and portfolio worlds.</p>
+          <div className="fa-hero-actions">
+            <Link href="/fuji/film" className="fa-hero-button" aria-label="Open Fuji Atlas film mode">
+              <Film size={18} />
+              <span>Film mode</span>
+            </Link>
+          </div>
         </div>
         <div className="fa-stat-grid" aria-label="Fuji Atlas stats">
           <div>

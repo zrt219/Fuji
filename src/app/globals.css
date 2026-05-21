@@ -642,6 +642,42 @@ dd {
   line-height: 1.35;
 }
 
+.fa-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 26px;
+}
+
+.fa-hero-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 52px;
+  padding: 0 18px;
+  border: 1px solid rgba(198, 165, 92, 0.5);
+  border-radius: 999px;
+  background: linear-gradient(180deg, rgba(198, 165, 92, 0.18), rgba(255, 255, 255, 0.08));
+  color: #f8f5ed;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  backdrop-filter: blur(16px);
+  box-shadow: 0 10px 28px rgba(5, 7, 10, 0.28);
+}
+
+.fa-hero-button:hover,
+.fa-hero-button:focus-visible {
+  background: linear-gradient(180deg, rgba(198, 165, 92, 0.28), rgba(255, 255, 255, 0.12));
+  border-color: rgba(230, 199, 150, 0.78);
+}
+
+.fa-hero-button svg {
+  flex: none;
+}
+
 .fa-stat-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
