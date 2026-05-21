@@ -60,3 +60,12 @@
 - Verification performed: `vercel link --yes --scope zrt219s-projects --project fuji-byzrt`, `vercel deploy . --prod -y`, README review against the new linked project state.
 - Evidence/files: `.vercel/project.json`, `README.md`, Vercel deployment `dpl_CWjoyndVazhxFnc7mFQwYKhWYjdE`.
 - Resume-safe bullet: Corrected and redeployed a production Vercel portfolio app to the intended project target, then aligned repository documentation with the live deployment.
+
+## 2026-05-21 â€” Verified Engineering Work
+
+- Built/changed: Deployed the latest `main` branch state to the production Vercel project `fuji-byzrt` after the README and deployment-target corrections landed in GitHub.
+- Systems involved: Vercel production deployment pipeline, Next.js static build output, GitHub-to-hosted release flow.
+- Technical skills demonstrated: production release execution, hosted build validation, deployment state management.
+- Verification performed: `vercel deploy . --prod -y`, successful hosted build for `/`, `/fuji`, `/fuji/film`, and `/fuji/curate`.
+- Evidence/files: Vercel deployment `dpl_5pq7hTFVk4ZMN2y1iHeHNEv7dTsF`, `.vercel/project.json`.
+- Resume-safe bullet: Released the latest curated Fuji Atlas build to a production Vercel project, validating static gallery, film mode, and curation routes in a hosted environment.
