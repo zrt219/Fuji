@@ -123,3 +123,12 @@
 - Verification performed: `npm run build`, Browser plugin click test on `/fuji` confirmed the Row toggle sets `aria-pressed`, applies `fa-masonry row`, and produces a horizontal scroll area.
 - Evidence/files: `src/components/fuji/FujiGallery.tsx`, `src/app/globals.css`.
 - Resume-safe bullet: Added an accessible layout toggle to a portfolio media atlas, enabling masonry or horizontal row browsing with browser-verified interaction behavior.
+
+## 2026-05-21 - Verified Engineering Work
+
+- Built/changed: Upgraded Fuji Atlas film mode with chapter navigation, play/pause controls, previous/next controls, an Atlas return action, active frame metadata, a stronger cinematic overlay system, and responsive control placement.
+- Systems involved: Next.js client film route, Fuji image taxonomy sequence, responsive CSS presentation layer, in-app Browser plugin verification.
+- Technical skills demonstrated: interactive presentation design, keyboard and click navigation, scroll-snap film sequencing, responsive visual QA, build/lint validation.
+- Verification performed: `npm run build`, `npm run lint`, Browser plugin click test on `/fuji/film`, and desktop/mobile Playwright layout bounds checks.
+- Evidence/files: `src/components/fuji/FujiFilmstrip.tsx`, `src/app/globals.css`.
+- Resume-safe bullet: Reworked a static portfolio film reel into an interactive cinematic presentation mode with chapter navigation, playback controls, metadata overlays, and browser-verified responsive behavior.
