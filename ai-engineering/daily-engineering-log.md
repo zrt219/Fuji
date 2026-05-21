@@ -42,3 +42,21 @@
 - Verification performed: `vercel deploy . -y`, hosted Vercel build logs showed successful static route generation for `/`, `/fuji`, `/fuji/film`, and `/fuji/curate`.
 - Evidence/files: `.vercel/project.json`, `.gitignore`, Vercel deployment `dpl_9wBbSkARp3wq7KZKr1eUuL7HDp18`.
 - Resume-safe bullet: Deployed a Next.js portfolio media atlas to Vercel with a live routed build covering curated gallery, film mode, and curation workflows.
+
+## 2026-05-21 â€” Verified Engineering Work
+
+- Built/changed: Added a repository README that documents the Fuji Atlas routes, image pipeline, curation workflow, current archive counts, local commands, and live deployment targets.
+- Systems involved: GitHub repository documentation, Next.js route structure, static asset pipeline documentation.
+- Technical skills demonstrated: technical writing, repo onboarding design, architecture summarization, operational documentation.
+- Verification performed: Reviewed the generated `README.md` against the current project structure and commands.
+- Evidence/files: `README.md`.
+- Resume-safe bullet: Wrote project-grade repository documentation for a curated media atlas, covering runtime routes, asset generation workflow, curation process, and deployment handoff.
+
+## 2026-05-21 â€” Verified Engineering Work
+
+- Built/changed: Corrected the Vercel project link to `fuji-byzrt`, redeployed the production build to the right Vercel target, and updated the repository README to reference the correct live URL.
+- Systems involved: Vercel project linking, production deployment pipeline, GitHub repository documentation.
+- Technical skills demonstrated: deployment correction, release verification, operational documentation maintenance.
+- Verification performed: `vercel link --yes --scope zrt219s-projects --project fuji-byzrt`, `vercel deploy . --prod -y`, README review against the new linked project state.
+- Evidence/files: `.vercel/project.json`, `README.md`, Vercel deployment `dpl_CWjoyndVazhxFnc7mFQwYKhWYjdE`.
+- Resume-safe bullet: Corrected and redeployed a production Vercel portfolio app to the intended project target, then aligned repository documentation with the live deployment.
