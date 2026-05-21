@@ -1,0 +1,44 @@
+## 2026-05-21 — Verified Engineering Work
+
+- Built/changed: Created a Vercel-ready Next.js Fuji Gallery Atlas with generated image metadata, optimized WebP variants, duplicate-aware archive records, and a cinematic responsive gallery UI.
+- Systems involved: Next.js App Router, Vercel static build pipeline, Sharp image optimization, generated TypeScript gallery manifest, Playwright visual smoke verification.
+- Technical skills demonstrated: asset pipeline design, duplicate hash detection, responsive frontend implementation, accessible status labeling, production build verification.
+- Verification performed: `npm run gallery:validate`, `npm run build`, `npm run lint`, Playwright desktop/mobile smoke check.
+- Evidence/files: `src/components/fuji-gallery.tsx`, `src/data/gallery.ts`, `scripts/optimize-gallery.mjs`, `scripts/build-gallery-manifest.mjs`, `public/gallery-verification-desktop.png`, `public/gallery-verification-mobile.png`.
+- Resume-safe bullet: Built a Vercel-ready cinematic image gallery system that converts 123 Fuji/Japan source images into 96 deployable canonical WebP assets with duplicate-aware archive metadata and responsive visual browsing.
+
+## 2026-05-21 — Verified Engineering Work
+
+- Built/changed: Added the Fuji Atlas taxonomy subsystem with `/fuji`, `/fuji/film`, and `/fuji/curate`, generated `src/data/fuji-images.ts` from `public/fuji`, and removed source/provenance-based gallery categories from the Fuji UI.
+- Systems involved: Next.js App Router, Sharp manifest generation, static curation workflow, in-app browser verification, Playwright keyboard/export checks.
+- Technical skills demonstrated: typed content modeling, static asset manifest generation, visual taxonomy design, keyboard-accessible lightbox behavior, curation workflow design.
+- Verification performed: `npm run fuji:manifest`, `npm run build`, `npm run lint`, Browser route/text checks, Playwright mobile/lightbox/curation export checks.
+- Evidence/files: `scripts/generate-fuji-manifest.mjs`, `src/data/fuji-images.ts`, `src/data/fuji-chapters.ts`, `src/components/fuji/`, `src/app/fuji/`.
+- Resume-safe bullet: Built a static Fuji Atlas visual taxonomy system with typed Japanese place-world categories, film presentation mode, and a keyboard-driven curation dashboard for portfolio image classification.
+
+## 2026-05-21 â€” Verified Engineering Work
+
+- Built/changed: Completed a full visual curation pass for the 95 canonical Fuji Atlas frames, populated `scripts/fuji-category-seed.json`, regenerated `src/data/fuji-images.ts`, and polished film mode, lightbox metadata labels, and the curation control surface.
+- Systems involved: Static JSON seed workflow, generated TypeScript content manifest, Next.js App Router presentation routes, in-app browser verification.
+- Technical skills demonstrated: visual taxonomy curation, metadata normalization, presentation-sequence design, responsive UI refinement, browser-based acceptance testing.
+- Verification performed: `npm run fuji:manifest`, `npm run build`, `npm run lint`, Browser checks for `/fuji`, `/fuji/film`, `/fuji/curate`, and lightbox rendering.
+- Evidence/files: `scripts/fuji-category-seed.json`, `src/data/fuji-images.ts`, `src/data/fuji-labels.ts`, `src/components/fuji/FujiFilmstrip.tsx`, `src/components/fuji/FujiLightbox.tsx`, `src/app/fuji/curate/page.tsx`.
+- Resume-safe bullet: Curated and shipped a Japanese location-system media atlas with 95 classified frames, chapter-driven film mode, and a browser-verified static curation workflow for portfolio storytelling.
+
+## 2026-05-21 â€” Verified Engineering Work
+
+- Built/changed: Refined the Fuji Atlas lightbox into a larger full-screen preview with compact overlay metadata and centered lacquer-red navigation controls using Japanese-inspired glyph accents.
+- Systems involved: Next.js App Router lightbox UI, responsive CSS overlay layout, in-app browser review workflow.
+- Technical skills demonstrated: modal interaction design, visual hierarchy refinement, responsive control placement, premium presentation polish.
+- Verification performed: `npm run lint`, `npm run build`, Browser verification on `/fuji` lightbox interaction.
+- Evidence/files: `src/components/fuji/FujiLightbox.tsx`, `src/components/fuji/FujiGallery.tsx`, `src/app/globals.css`.
+- Resume-safe bullet: Polished a portfolio media lightbox into a full-screen cinematic viewer with centered navigation, overlay metadata, and browser-verified premium interaction design.
+
+## 2026-05-21 â€” Verified Engineering Work
+
+- Built/changed: Linked the Fuji Atlas workspace to Vercel and deployed the current Next.js build successfully, producing a live public URL and a stable alias.
+- Systems involved: Vercel CLI project linking, Next.js static deployment pipeline, production build verification.
+- Technical skills demonstrated: deployment orchestration, project linking, hosted build validation, release handoff.
+- Verification performed: `vercel deploy . -y`, hosted Vercel build logs showed successful static route generation for `/`, `/fuji`, `/fuji/film`, and `/fuji/curate`.
+- Evidence/files: `.vercel/project.json`, `.gitignore`, Vercel deployment `dpl_9wBbSkARp3wq7KZKr1eUuL7HDp18`.
+- Resume-safe bullet: Deployed a Next.js portfolio media atlas to Vercel with a live routed build covering curated gallery, film mode, and curation workflows.
