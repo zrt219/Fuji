@@ -19,7 +19,7 @@ export function FujiChapterRail({ active, counts, total, onSelect }: Props) {
         return (
           <button key={chapter.id} className={active === chapter.id ? "active" : ""} onClick={() => onSelect(chapter.id)}>
             <span className="fa-chapter-index">{String(index + 1).padStart(2, "0")}</span>
-            <span>
+            <span className="fa-chapter-copy">
               <strong>{chapter.label}</strong>
               <em>{chapter.subtitle}</em>
             </span>

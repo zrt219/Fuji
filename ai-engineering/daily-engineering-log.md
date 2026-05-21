@@ -78,3 +78,48 @@
 - Verification performed: `npm run build`, browser screenshot verification of the `/fuji` hero CTA, `git push origin main`, `vercel deploy . --prod -y`.
 - Evidence/files: `src/components/fuji/FujiHero.tsx`, `src/app/globals.css`, `src/app/film/page.tsx`, `src/app/curate/page.tsx`, `README.md`, `public/readme/ukiyo-e/`, Vercel deployment `dpl_DDShxT5AL3MNiZ9XShTXNGKFzKuL`.
 - Resume-safe bullet: Added a film-mode entry point and generated ukiyo-e README assets to the Fuji Atlas portfolio, then shipped the update through GitHub and Vercel with canonical route compatibility.
+
+## 2026-05-21 - Verified Engineering Work
+
+- Built/changed: Improved Fuji Atlas chapter rail readability by widening the navigation column, separating copy from count badges, and increasing subtitle line height and contrast for dense chapter cards.
+- Systems involved: Next.js App Router Fuji gallery, responsive CSS chapter rail, Playwright visual verification.
+- Technical skills demonstrated: accessibility-oriented visual polish, responsive layout refinement, dense navigation readability, browser-based UI verification.
+- Verification performed: `npm run build`, `curl.exe -I http://localhost:3000/fuji`, Playwright screenshot and text extraction for the AgriTech Fuji chapter card.
+- Evidence/files: `src/app/globals.css`, `src/components/fuji/FujiChapterRail.tsx`.
+- Resume-safe bullet: Refined a dense visual taxonomy navigation rail for a portfolio media atlas, improving text hierarchy, count readability, and browser-verified chapter scanning.
+
+## 2026-05-21 - Verified Engineering Work
+
+- Built/changed: Added a prioritized social link strip to the Fuji Atlas hero with GitHub, LinkedIn, X, Achievements, Substack, and Kick links.
+- Systems involved: Next.js App Router Fuji hero, external portfolio link navigation, responsive hero UI.
+- Technical skills demonstrated: profile-link integration, accessible external navigation, visual hierarchy preservation, production build verification.
+- Verification performed: `npm run build`, `curl.exe -I http://localhost:3000/fuji`, Playwright extraction of hero social labels and hrefs.
+- Evidence/files: `src/components/fuji/FujiHero.tsx`, `src/app/globals.css`.
+- Resume-safe bullet: Integrated prioritized professional social links into a cinematic portfolio hero while preserving responsive layout and verified route behavior.
+
+## 2026-05-21 - Verified Engineering Work
+
+- Built/changed: Upgraded the Fuji Atlas hero stats into a premium Atlas Index module with a framed glass panel, primary frame-count emphasis, metric notes, and stronger hierarchy.
+- Systems involved: Next.js Fuji hero, responsive CSS stat module, Playwright route verification.
+- Technical skills demonstrated: hero information architecture, premium UI module styling, accessible metric labeling, production build validation.
+- Verification performed: `npm run build`, `curl.exe -I http://localhost:3000/fuji`, Playwright extraction of Atlas Index text and layout bounds.
+- Evidence/files: `src/components/fuji/FujiHero.tsx`, `src/app/globals.css`.
+- Resume-safe bullet: Redesigned a portfolio hero metrics module into a structured Atlas Index panel with clearer hierarchy and browser-verified route behavior.
+
+## 2026-05-21 - Verified Engineering Work
+
+- Built/changed: Adjusted Fuji Atlas hero typography spacing so the display title and subtitle maintain clear separation on desktop and mobile viewports.
+- Systems involved: Next.js Fuji hero, responsive CSS typography, Playwright layout verification.
+- Technical skills demonstrated: text-overlap prevention, responsive hero layout refinement, browser geometry verification.
+- Verification performed: `npm run build`, Playwright bounding-box checks at 1562x1278 and 390x844 confirmed an 18px gap between the hero title and subtitle.
+- Evidence/files: `src/app/globals.css`.
+- Resume-safe bullet: Fixed responsive hero typography spacing in a cinematic portfolio page using build validation and browser bounding-box verification.
+
+## 2026-05-21 - Verified Engineering Work
+
+- Built/changed: Added a Fuji Atlas gallery layout setting that switches between the default masonry browser and a horizontal row mode for scanning frames in one line.
+- Systems involved: Next.js client gallery component, responsive CSS gallery layouts, in-app Browser plugin verification.
+- Technical skills demonstrated: interactive view-state design, accessible segmented controls, horizontal scroll-snap layout, browser-based UI acceptance testing.
+- Verification performed: `npm run build`, Browser plugin click test on `/fuji` confirmed the Row toggle sets `aria-pressed`, applies `fa-masonry row`, and produces a horizontal scroll area.
+- Evidence/files: `src/components/fuji/FujiGallery.tsx`, `src/app/globals.css`.
+- Resume-safe bullet: Added an accessible layout toggle to a portfolio media atlas, enabling masonry or horizontal row browsing with browser-verified interaction behavior.

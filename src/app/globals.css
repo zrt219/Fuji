@@ -627,7 +627,13 @@ dd {
   align-items: end;
 }
 
-.fa-hero h1,
+.fa-hero h1 {
+  margin: 14px 0;
+  font-size: clamp(70px, 12vw, 170px);
+  line-height: 0.9;
+  letter-spacing: 0;
+}
+
 .fa-film h1 {
   margin: 14px 0;
   font-size: clamp(70px, 12vw, 170px);
@@ -635,11 +641,12 @@ dd {
   letter-spacing: 0;
 }
 
-.fa-hero-copy p:last-child {
+.fa-hero-subtitle {
   max-width: 760px;
-  margin: 0;
+  margin: 18px 0 0;
   font-size: clamp(20px, 2vw, 28px);
   line-height: 1.35;
+  text-wrap: balance;
 }
 
 .fa-hero-actions {
@@ -678,14 +685,68 @@ dd {
   flex: none;
 }
 
+.fa-hero-socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  max-width: 760px;
+  margin-top: 18px;
+}
+
+.fa-hero-socials a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 38px;
+  padding: 0 13px;
+  border: 1px solid rgba(248, 245, 237, 0.22);
+  border-radius: 999px;
+  background: rgba(7, 17, 31, 0.42);
+  color: rgba(248, 245, 237, 0.88);
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  backdrop-filter: blur(18px);
+  box-shadow: inset 0 0 0 1px rgba(198, 165, 92, 0.08);
+}
+
+.fa-hero-socials a:first-child {
+  border-color: rgba(230, 199, 150, 0.7);
+  background: rgba(198, 165, 92, 0.18);
+  color: #fffaf0;
+}
+
+.fa-hero-socials a:hover,
+.fa-hero-socials a:focus-visible {
+  border-color: rgba(230, 199, 150, 0.82);
+  background: rgba(139, 28, 28, 0.42);
+  color: #fffaf0;
+}
+
+.fa-hero-socials svg {
+  flex: none;
+}
+
 .fa-stat-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  gap: 12px;
+  padding: 14px;
+  border: 1px solid rgba(230, 199, 150, 0.34);
+  border-radius: 32px;
+  background:
+    linear-gradient(135deg, rgba(248, 245, 237, 0.18), rgba(7, 17, 31, 0.18)),
+    rgba(7, 17, 31, 0.34);
+  box-shadow:
+    0 24px 80px rgba(0, 0, 0, 0.24),
+    inset 0 0 0 1px rgba(248, 245, 237, 0.05);
+  backdrop-filter: blur(22px);
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.fa-stat-grid div,
 .fa-uncat-pill,
 .fa-card,
 .fa-curate-panel,
@@ -696,20 +757,98 @@ dd {
   border-radius: 28px;
 }
 
-.fa-stat-grid div {
-  padding: 18px;
+.fa-stat-header,
+.fa-stat-card {
+  border: 1px solid rgba(230, 199, 150, 0.26);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.82), rgba(248, 245, 237, 0.66)),
+    rgba(255, 255, 255, 0.72);
+  border-radius: 24px;
   color: #18140d;
-  backdrop-filter: blur(18px);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.72);
 }
 
-.fa-stat-grid strong {
+.fa-stat-header {
+  grid-column: 1 / -1;
+  min-height: 58px;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  background:
+    linear-gradient(135deg, rgba(139, 28, 28, 0.42), rgba(7, 17, 31, 0.88)),
+    #07111f;
+  color: #f8f5ed;
+}
+
+.fa-stat-header span {
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #e6c796;
+}
+
+.fa-stat-header strong {
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: rgba(248, 245, 237, 0.82);
+}
+
+.fa-stat-card {
+  min-height: 116px;
+  padding: 18px;
+  position: relative;
+  overflow: hidden;
+}
+
+.fa-stat-card.primary {
+  grid-row: span 2;
+  min-height: 244px;
+}
+
+.fa-stat-card::after {
+  content: "";
+  position: absolute;
+  inset: auto 16px 14px 16px;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(198, 165, 92, 0.7), rgba(198, 165, 92, 0));
+}
+
+.fa-stat-number {
   display: block;
   color: #c6a55c;
-  font-size: 42px;
-  line-height: 1;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 0.9;
 }
 
-.fa-stat-grid span,
+.fa-stat-card.primary .fa-stat-number {
+  font-size: 78px;
+  letter-spacing: 0;
+}
+
+.fa-stat-label {
+  display: block;
+  margin-top: 12px;
+  font-size: 11px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #18140d;
+}
+
+.fa-stat-card small {
+  display: block;
+  margin-top: 8px;
+  max-width: 150px;
+  font-size: 11px;
+  line-height: 1.35;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: rgba(24, 20, 13, 0.58);
+}
+
 .fa-uncat-pill span {
   display: block;
   margin-top: 8px;
@@ -724,8 +863,8 @@ dd {
   margin: 0 auto;
   padding: 48px 0 100px;
   display: grid;
-  grid-template-columns: 320px minmax(0, 1fr);
-  gap: 28px;
+  grid-template-columns: 360px minmax(0, 1fr);
+  gap: 32px;
 }
 
 .fa-chapter-rail {
@@ -740,17 +879,18 @@ dd {
 
 .fa-chapter-rail button {
   display: grid;
-  grid-template-columns: 34px 1fr auto;
-  gap: 12px;
-  align-items: center;
-  min-height: 72px;
-  padding: 12px;
+  grid-template-columns: 40px minmax(0, 1fr) 38px;
+  gap: 14px;
+  align-items: start;
+  min-height: 82px;
+  padding: 14px;
   border: 1px solid rgba(198, 165, 92, 0.28);
   border-radius: 24px;
   background: rgba(255, 255, 255, 0.62);
   color: #18140d;
   cursor: pointer;
   text-align: left;
+  box-shadow: 0 10px 26px rgba(24, 20, 13, 0.04);
 }
 
 .fa-chapter-rail button.active,
@@ -766,26 +906,54 @@ dd {
   color: #c6a55c;
 }
 
+.fa-chapter-copy {
+  min-width: 0;
+}
+
 .fa-chapter-rail strong,
 .fa-card strong {
   display: block;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 13px;
+  font-size: 13.5px;
+  line-height: 1.15;
   text-transform: uppercase;
 }
 
 .fa-chapter-rail em {
   display: block;
-  margin-top: 4px;
-  font-size: 12px;
-  line-height: 1.25;
+  max-width: 230px;
+  margin-top: 6px;
+  font-size: 12.5px;
+  line-height: 1.35;
   font-style: normal;
-  opacity: 0.78;
+  color: rgba(24, 20, 13, 0.72);
 }
 
 .fa-chapter-rail b {
+  display: inline-grid;
+  place-items: center;
+  min-width: 30px;
+  min-height: 30px;
+  padding: 0 7px;
+  border: 1px solid rgba(198, 165, 92, 0.28);
+  border-radius: 999px;
+  background: rgba(248, 245, 237, 0.68);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
+  line-height: 1;
+  color: #18140d;
+}
+
+.fa-chapter-rail button.active em,
+.fa-chapter-rail button:hover em {
+  color: rgba(248, 245, 237, 0.78);
+}
+
+.fa-chapter-rail button.active b,
+.fa-chapter-rail button:hover b {
+  border-color: rgba(198, 165, 92, 0.48);
+  background: rgba(248, 245, 237, 0.08);
+  color: #f8f5ed;
 }
 
 .fa-gallery-heading {
@@ -811,6 +979,52 @@ dd {
   color: #594c32;
 }
 
+.fa-gallery-tools {
+  display: grid;
+  gap: 12px;
+  min-width: 220px;
+  align-self: end;
+}
+
+.fa-layout-toggle {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px;
+  padding: 6px;
+  border: 1px solid rgba(198, 165, 92, 0.3);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.64);
+  box-shadow: 0 14px 34px rgba(24, 20, 13, 0.06);
+}
+
+.fa-layout-toggle button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 36px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: #594c32;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.fa-layout-toggle button.active,
+.fa-layout-toggle button:hover,
+.fa-layout-toggle button:focus-visible {
+  background: #07111f;
+  color: #f8f5ed;
+}
+
+.fa-layout-toggle svg {
+  flex: none;
+}
+
 .fa-uncat-pill {
   min-width: 170px;
   padding: 16px;
@@ -829,6 +1043,31 @@ dd {
   column-gap: 16px;
 }
 
+.fa-masonry.row {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
+  padding-bottom: 18px;
+  columns: initial;
+}
+
+.fa-masonry.row::-webkit-scrollbar {
+  height: 12px;
+}
+
+.fa-masonry.row::-webkit-scrollbar-track {
+  border-radius: 999px;
+  background: rgba(198, 165, 92, 0.16);
+}
+
+.fa-masonry.row::-webkit-scrollbar-thumb {
+  border: 3px solid #f8f5ed;
+  border-radius: 999px;
+  background: #c6a55c;
+}
+
 .fa-card {
   display: inline-block;
   width: 100%;
@@ -840,6 +1079,16 @@ dd {
   break-inside: avoid;
   overflow: hidden;
   box-shadow: 0 18px 50px rgba(24, 20, 13, 0.08);
+}
+
+.fa-masonry.row .fa-card {
+  flex: 0 0 clamp(240px, 24vw, 340px);
+  margin: 0;
+  scroll-snap-align: start;
+}
+
+.fa-masonry.row .fa-card-image {
+  aspect-ratio: 4 / 3 !important;
 }
 
 .fa-card-image {
@@ -1407,6 +1656,7 @@ dd {
 
   .fa-hero h1 {
     font-size: 62px;
+    line-height: 0.98;
   }
 
   .fa-stat-grid,
