@@ -69,3 +69,12 @@
 - Verification performed: `vercel deploy . --prod -y`, successful hosted build for `/`, `/fuji`, `/fuji/film`, and `/fuji/curate`.
 - Evidence/files: Vercel deployment `dpl_5pq7hTFVk4ZMN2y1iHeHNEv7dTsF`, `.vercel/project.json`.
 - Resume-safe bullet: Released the latest curated Fuji Atlas build to a production Vercel project, validating static gallery, film mode, and curation routes in a hosted environment.
+
+## 2026-05-21 — Verified Engineering Work
+
+- Built/changed: Added a film-mode CTA on the Fuji hero, created compatibility aliases for `/film` and `/curate`, updated the README with the current Fuji entry URL and a five-image zrt ukiyo-e study set, and committed the generated README assets into the repo.
+- Systems involved: Next.js App Router, Fuji Atlas hero/copy system, GitHub documentation, Vercel production deployment, local image-generation workflow.
+- Technical skills demonstrated: route compatibility design, premium CTA integration, generated-asset curation, release documentation, production deployment.
+- Verification performed: `npm run build`, browser screenshot verification of the `/fuji` hero CTA, `git push origin main`, `vercel deploy . --prod -y`.
+- Evidence/files: `src/components/fuji/FujiHero.tsx`, `src/app/globals.css`, `src/app/film/page.tsx`, `src/app/curate/page.tsx`, `README.md`, `public/readme/ukiyo-e/`, Vercel deployment `dpl_DDShxT5AL3MNiZ9XShTXNGKFzKuL`.
+- Resume-safe bullet: Added a film-mode entry point and generated ukiyo-e README assets to the Fuji Atlas portfolio, then shipped the update through GitHub and Vercel with canonical route compatibility.
