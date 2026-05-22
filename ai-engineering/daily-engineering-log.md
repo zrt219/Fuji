@@ -132,3 +132,21 @@
 - Verification performed: `npm run build`, `npm run lint`, Browser plugin click test on `/fuji/film`, and desktop/mobile Playwright layout bounds checks.
 - Evidence/files: `src/components/fuji/FujiFilmstrip.tsx`, `src/app/globals.css`.
 - Resume-safe bullet: Reworked a static portfolio film reel into an interactive cinematic presentation mode with chapter navigation, playback controls, metadata overlays, and browser-verified responsive behavior.
+
+## 2026-05-21 - Verified Engineering Work
+
+- Built/changed: Unified the site homepage and Fuji Atlas route behind one shared page composition so `/` and `/fuji` render the same cinematic Atlas shell while preserving `/film` to `/fuji/film` routing.
+- Systems involved: Next.js App Router homepage routing, shared server-rendered Fuji Atlas composition, global metadata, in-app Browser route verification.
+- Technical skills demonstrated: route consolidation, shared page composition design, metadata alignment, HTTP and browser-based acceptance testing.
+- Verification performed: `npm run build`, `npm run lint`, `curl.exe -I http://localhost:3000/`, `curl.exe -I http://localhost:3000/fuji`, `curl.exe -I http://localhost:3000/film`, `curl.exe -I http://localhost:3000/fuji/film`, Browser plugin comparison of `/` and `/fuji`.
+- Evidence/files: `src/components/fuji/FujiAtlasPage.tsx`, `src/app/page.tsx`, `src/app/fuji/page.tsx`, `src/app/layout.tsx`.
+- Resume-safe bullet: Consolidated a portfolio homepage and sub-route into a single shared Next.js Atlas page composition, preserving route aliases and verifying identical rendered output in-browser.
+
+## 2026-05-21 - Verified Engineering Work
+
+- Built/changed: Added three curated ukiyo-e-inspired heritage frames to the Fuji Atlas image set, regenerated the Fuji manifest, and expanded the live archive from 95 to 98 frames.
+- Systems involved: Fuji image asset pipeline, manifest generation script, category seed metadata, Next.js Atlas routes, Vercel production deployment.
+- Technical skills demonstrated: image pipeline extension, metadata curation, build verification, browser route QA, GitHub and Vercel release synchronization.
+- Verification performed: `npm run fuji:manifest`, `npm run build`, `npm run lint`, Browser plugin verification of `/fuji` showing 98 total frames and Heritage Art count updates.
+- Evidence/files: `public/fuji/123-fuji-japan-frame-123-edo-snow-travelers.webp`, `public/fuji/124-fuji-japan-frame-124-great-wave.webp`, `public/fuji/125-fuji-japan-frame-125-fuji-court-procession.webp`, `scripts/fuji-category-seed.json`, `src/data/fuji-images.ts`.
+- Resume-safe bullet: Extended a curated portfolio image atlas by integrating new heritage-art assets, regenerating typed manifest data, and verifying updated counts across the live browsing experience.

@@ -1233,5 +1233,44 @@
     "featured": false,
     "heroCandidate": false,
     "alt": "Fuji Five Lakes frame FJ-095 in the Fuji Atlas Japanese visual archive"
+  },
+  "123-fuji-japan-frame-123-edo-snow-travelers.webp": {
+    "category": "japan-heritage-art",
+    "locationFamily": "heritage-art",
+    "visualSystem": "heritage",
+    "mood": "premium",
+    "palette": "mixed",
+    "timeOfDay": "day",
+    "composition": "heritage-frame",
+    "useCase": "portfolio-case-study",
+    "featured": true,
+    "heroCandidate": false,
+    "alt": "Heritage Art frame FJ-096 in the Fuji Atlas Japanese visual archive"
+  },
+  "124-fuji-japan-frame-124-great-wave.webp": {
+    "category": "japan-heritage-art",
+    "locationFamily": "heritage-art",
+    "visualSystem": "heritage",
+    "mood": "premium",
+    "palette": "blue",
+    "timeOfDay": "day",
+    "composition": "heritage-frame",
+    "useCase": "hero",
+    "featured": true,
+    "heroCandidate": true,
+    "alt": "Heritage Art frame FJ-097 in the Fuji Atlas Japanese visual archive"
+  },
+  "125-fuji-japan-frame-125-fuji-court-procession.webp": {
+    "category": "japan-heritage-art",
+    "locationFamily": "heritage-art",
+    "visualSystem": "heritage",
+    "mood": "premium",
+    "palette": "mixed",
+    "timeOfDay": "day",
+    "composition": "heritage-frame",
+    "useCase": "gallery-card",
+    "featured": true,
+    "heroCandidate": false,
+    "alt": "Heritage Art frame FJ-098 in the Fuji Atlas Japanese visual archive"
   }
 }

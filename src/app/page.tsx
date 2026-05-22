@@ -1,6 +1,5 @@
-import { FujiGallery } from "@/components/fuji-gallery";
-import { galleryItems, galleryStats } from "@/data/gallery";
+import { FujiAtlasPage } from "@/components/fuji/FujiAtlasPage";
 
 export default function Home() {
-  return <FujiGallery items={galleryItems} stats={galleryStats} />;
+  return <FujiAtlasPage />;
 }

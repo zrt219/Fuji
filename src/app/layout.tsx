@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Fuji Gallery Atlas",
-  description: "A cinematic Vercel-ready gallery for the Fuji image archive."
+  title: "Fuji Atlas",
+  description: "A cinematic Japanese visual system for AI, product, and portfolio worlds."
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
